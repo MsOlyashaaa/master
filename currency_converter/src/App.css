@@ -1,0 +1,8 @@
+.currency {
+    width: fit-content;
+    margin: 40px auto 0;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #666;
+}

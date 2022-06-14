@@ -1,0 +1,17 @@
+
+.currency-input {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 10px 10px 10px 0;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.currency-select {
+    font-size: 20px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+}

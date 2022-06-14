@@ -1,0 +1,13 @@
+.currency-header {
+    font-family: sans-serif;
+    font-size: 22px;
+    background: #E5E5E5;
+    padding: 20px;
+    box-shadow: 1px 1px 10px #666;
+}
+
+
+.currency-header span {
+    text-align: start;
+    padding-right: 25px;
+}
