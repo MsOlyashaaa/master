@@ -7,19 +7,21 @@ export function useCurrency() {
 
   useEffect(() => {
     setLoading(true);
-    fetch(BANK_URL_API).then((response) => {
-      return response.json();
-    })
+    fetch(BANK_URL_API)
+      .then((response) => {
+        return response.json();
+      })
       .then((data) => {
         const temporaryMap = new Map();
-        temporaryMap.set('UAN', 1);
-        data.filter(value => CURRENCIES_RATE.includes(value['cc']))
+        temporaryMap.set('UAH', 1);
+        data
+          .filter(value => CURRENCIES_RATE.includes(value['cc']))
           .forEach(value => (
             temporaryMap.set(value['cc'], value['rate'])
           ));
         setCurrency(temporaryMap);
         setLoading(false);
-      });
+      }).catch(error=>console.log(error.message));
   }, [setLoading, setCurrency]);
   return [currency, isLoading];
 }
